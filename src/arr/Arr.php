@@ -69,7 +69,7 @@ class Arr
      *
      * @return void
      */
-    public static function del(&$arr, $name)
+    public static function delete(&$arr, $name)
     {
         if (array_key_exists($name, $arr)) {
             unset($arr[$name]);
