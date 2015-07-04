@@ -155,7 +155,7 @@ class Arr
                 $types = explode("|", Arr::get($descriptor, "type"));
                 $default = Arr::get($descriptor, "default");
                 $required = Arr::get(
-                    $descriptor, "required", !Arr::is($descriptor, "default")
+                    $descriptor, "required", !Arr::exist($descriptor, "default")
                 );
             }
 
