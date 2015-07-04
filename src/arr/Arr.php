@@ -56,7 +56,7 @@ class Arr
      *
      * @return boolean
      */
-    public static function is($arr, $name)
+    public static function exist($arr, $name)
     {
         return array_key_exists($name, $arr);
     }
